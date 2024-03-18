@@ -1,0 +1,18 @@
+: INPUT-NUMBER ( -- n )
+    PAD 5 BLANK PAD 5 stdin READ-LINE DROP DROP PAD SWAP s>number? DROP D>S
+;
+
+: OUTPUT-INTEGER ( n -- )
+    DUP ABS 0 <# #S ROT SIGN #> TYPE
+;
+    
+: MAIN
+    INPUT-NUMBER
+    100 /MOD
+    SWAP 0= IF
+        OUTPUT-INTEGER ELSE
+        1+ OUTPUT-INTEGER THEN
+;
+
+MAIN
+BYE
