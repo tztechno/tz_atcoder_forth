@@ -1,0 +1,12 @@
+: INPUT-NUMBER ( -- n )
+    PAD 7 BLANK PAD 7 stdin READ-LINE DROP DROP PAD SWAP s>number? DROP D>S
+;
+
+: MAIN
+    INPUT-NUMBER
+    DUP 12800000 + * S>D D>F FSQRT F. CR
+;
+
+
+MAIN
+BYE
