@@ -1,3 +1,5 @@
+####################################
+
 4 CONSTANT MAX-SIZE
 
 CREATE DATA MAX-SIZE CHARS ALLOT
@@ -20,3 +22,6 @@ DATA MAX-SIZE CHARS ERASE
 
 MAIN
 BYE
+
+####################################
+####################################
