@@ -7,6 +7,20 @@
 ####################################
 ####################################
 ####################################
+: INPUT-CHAR ( -- c )
+    stdin key-file
+;
+
+: MAIN
+    INPUT-CHAR INPUT-CHAR INPUT-CHAR
+    INPUT-CHAR DROP                     \ CR
+    [CHAR] ABC= IF
+        ." ARC" ELSE
+        ." ABC" THEN
+;
+
+MAIN
+BYE
 ####################################
 : INPUT-CHAR ( -- c )
     stdin key-file
