@@ -24,7 +24,7 @@
 : main
     1 ex-read-number ( a )
     1+ 12 mod . ( calculate and print product )
-    CR
+    cr
 ;
 
 main
