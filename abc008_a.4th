@@ -25,6 +25,7 @@
 : main
     2 ex-read-numbers ( a b )
     - 1- abs . ( calculate and print product )
+    cr
 ;
 
 main
