@@ -1,5 +1,5 @@
 ################################################
-[test is ok but submission error]
+[AC]
 
 : ex-read-line ( -- start-addr length )
     pad 84 0 fill
@@ -23,10 +23,11 @@
 
 : main
     1 ex-read-number ( a )
-    1+ 12 mod . ( calculate and print product )
-    cr
+    12 mod 1+ . ( calculate and print product )
 ;
 
 main
+bye
+
 
 #################################################
