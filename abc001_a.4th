@@ -1,4 +1,5 @@
 //abc001_a.4th
+[test successful but submission error]
 
 : ex-read-line ( -- start-addr length )
     pad 84 0 fill
