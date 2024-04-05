@@ -25,6 +25,7 @@
     ex-read-number ( a )
     ex-read-number ( b )
     - . ( calculate and print product )
+    cr
 ;
 
 main
