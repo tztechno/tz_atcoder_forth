@@ -26,7 +26,26 @@
 ```
 ---
 ```
+: INPUT-CHAR ( -- c )
+    KEY
+;
 
+: OUTPUT-ANSWER ( c -- )
+    CASE
+        [CHAR] A OF ." T" ENDOF
+        [CHAR] T OF ." A" ENDOF
+        [CHAR] C OF ." G" ENDOF
+        [CHAR] G OF ." C" ENDOF
+    ENDCASE
+;
+
+: MAIN
+    INPUT-CHAR
+    OUTPUT-ANSWER
+;
+
+MAIN
+BYE
 ```
 ---
 ```
